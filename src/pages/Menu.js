@@ -1,5 +1,5 @@
 const Menu = () => {
-    return <h1> This is the menu page </h1>
-}
+  return <h1> This is the menu page </h1>;
+};
 
-export default Menu
+export default Menu;
