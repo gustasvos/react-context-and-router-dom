@@ -11,7 +11,13 @@ import Profile from "./pages/Profile";
 export const AppContext = createContext();
 
 function App() {
-  const client = new QueryClient();
+  const client = new QueryClient({
+    defaultOptions: {
+      queries: {
+        refetchOnWindowFocus: false,
+      },
+    },
+  });
   const [username, setUsername] = useState("Gustavo");
 
   return (

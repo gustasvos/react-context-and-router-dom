@@ -2,6 +2,10 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Studies
+
+This repo has a project that fetch data from an API to show random cat facts on screen
+
 ## Available Scripts
 
 In the project directory, you can run:
