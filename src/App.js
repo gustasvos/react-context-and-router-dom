@@ -1,14 +1,13 @@
-import { useState } from "react";
 import "./App.css";
+import { useState } from "react";
+import { useToggle } from "./useToggle";
 
 function App() {
-  const [isVisible, setIsVisible] = useState(false);
+  const [isVisible, toggle] = useToggle(); // custom hook
 
   return (
     <div className="App">
-      <button onClick={() => setIsVisible((prev) => !prev)}>
-        {isVisible ? "Hide" : "Show"}
-      </button>
+      <button onClick={toggle}>{isVisible ? "Hide" : "Show"}</button>
       {isVisible && <h1> Hidden text </h1>}
     </div>
   );
